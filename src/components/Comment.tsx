@@ -24,13 +24,16 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
 
     return (
         <div className={styles.comment}>
-            <Avatar hasBorder={false} src="https://github.com/maykbrito.png" /> {/* Passando a propriedade hasBorder para definir se o avatar terá ou não borda*/}
+            <Avatar 
+                hasBorder={false} 
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=50"
+            /> {/* Passando a propriedade hasBorder para definir se o avatar terá ou não borda*/}
 
             <div className={styles.commentBox}>
                 <div className={styles.commentContent}>
                     <header>
                         <div className={styles.authorAndTime}>
-                            <strong>Josias</strong>
+                            <strong>João Silva</strong>
                             <time title="24 de Julho às 4:30h" dateTime="2022-05-11 8:13:50">Cerca de 1h atrás</time>
                         </div>
                         <button onClick={handleDeleteComment} title="Deletar comentário">
